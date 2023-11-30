@@ -18,6 +18,6 @@ export default async function RootRoute({params}: { params: { lang: string } }) 
         sectionRenderer(section, index)
       )
     } catch (error: any) {
-      window.alert('Missing or invalid credentials')
+      console.log('Missing or invalid credentials', error)
     }
 }
