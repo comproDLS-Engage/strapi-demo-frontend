@@ -4,7 +4,7 @@ import { getStrapiURL } from "./api-helpers";
 export async function fetchAPI(
   path: string,
   urlParamsObject = {},
-  options = {}
+  options = {}, preview = false
 ) {
   try {
     // Merge default and user options

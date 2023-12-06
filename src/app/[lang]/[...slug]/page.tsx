@@ -2,6 +2,7 @@ import {sectionRenderer} from "@/app/[lang]/utils/section-renderer";
 import {Metadata} from "next";
 import {getPageBySlug} from "@/app/[lang]/utils/get-page-by-slug";
 import {FALLBACK_SEO} from "@/app/[lang]/utils/constants";
+import { draftMode } from 'next/headers'
 
 
 type Props = {
@@ -13,14 +14,14 @@ type Props = {
 
 
 export async function generateMetadata({params}: Props): Promise<Metadata> {
-    const page = await getPageBySlug(params.slug, params.lang);
+    // const page = await getPageBySlug(params.slug, params.lang);
 
-    if (!page.data[0].attributes?.seo) return FALLBACK_SEO;
-    const metadata = page.data[0].attributes.seo
+    // if (!page.data[0].attributes?.seo) return FALLBACK_SEO;
+    // const metadata = page.data[0].attributes.seo
 
     return {
-        title: metadata.metaTitle,
-        description: metadata.metaDescription
+        title: "",
+        description: ""
     }
 }
 
