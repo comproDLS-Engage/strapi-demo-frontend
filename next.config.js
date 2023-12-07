@@ -14,8 +14,9 @@ const nextConfig = {
         hostname: 'images.pexels.com',
       },
       {
-        protocol: 'https',
-        hostname: 'strapi-demo-sibc.onrender.com',
+        protocol: 'http',
+        hostname: '3.138.124.108',
+        port: '1337',
         pathname: '/uploads/**',
       }
     ],
