@@ -27,5 +27,5 @@ export default function HighlightedText({
 
   result.push(`</${tag}>`);
 
-  return <div dangerouslySetInnerHTML={{ __html: result.join("") }} />;
+  return <div style={{color: '#FFF'}} dangerouslySetInnerHTML={{ __html: result.join("") }} />;
 }
