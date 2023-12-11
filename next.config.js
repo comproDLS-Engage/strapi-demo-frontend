@@ -14,6 +14,10 @@ const nextConfig = {
         hostname: 'images.pexels.com',
       },
       {
+        protocol: 'https',
+        hostname: 'strapi-demo-assests.s3.us-east-1.amazonaws.com',
+      },
+      {
         protocol: 'http',
         hostname: '3.138.124.108',
         port: '1337',
